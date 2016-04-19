@@ -1,6 +1,11 @@
 require 'sinatra/base'
 
 class DThree < Sinatra::Base
+
+  get '/' do
+    erb :scatterplot3  
+  end
+
   get '/barchart' do
     erb :barchart
   end
@@ -11,6 +16,10 @@ class DThree < Sinatra::Base
 
   get '/scatterplot2' do
     erb :scatterplot2
+  end
+
+  get '/scatterplot3' do
+    erb :scatterplot3
   end
 
   # start the server if ruby file executed directly
